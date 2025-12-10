@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Eliminatoria</title>
+
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        .form-control.is-valid {
+            border-width: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+<div class="container mt-5">
+
+    <h1 class="text-center mb-4">Registrar Eliminatoria</h1>
+
+    {% if partidos %}
+        <table class="table table-bordered table-striped shadow-sm">
+            <thead class="table-dark">
+                <tr>
+                    <th>Partido</th>
+                    <th>Goles</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for p in partidos %}
+                <tr>
+                    <td>{{ p.equipo_local.nombre }} vs {{ p.equipo_visitante.nombre }}</td>
+
+                    <td>
+                        <form method="POST" class="d-flex gap-2">
+                            {% csrf_token %}
+
+                            <input type="hidden" name="partido_id" value="{{ p.id }}">
+
+                            <!-- GOLES LOCAL -->
+                            <input type="number"
+                                   class="form-control {% if last_saved_id == p.id or p.jugado %}is-valid{% endif %}"
+                                   name="goles_local"
+                                   min="0"
+                                   value="{{ p.goles_local }}">
+
+                            <!-- GOLES VISITANTE -->
+                            <input type="number"
+                                   class="form-control {% if last_saved_id == p.id or p.jugado %}is-valid{% endif %}"
+                                   name="goles_visitante"
+                                   min="0"
+                                   value="{{ p.goles_visitante }}">
+                    </td>
+
+                    <td>
+                        <button class="btn btn-success btn-sm">Guardar</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    {% else %}
+        <div class="alert alert-info text-center">
+            No hay más partidos. La eliminatoria terminó.
+        </div>
+    {% endif %}
+
+    <a href="/" class="btn btn-secondary mt-3">Volver al panel principal</a>
+
+</div>
+</body>
+</html>

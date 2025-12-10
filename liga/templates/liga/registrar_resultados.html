@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Resultados</title>
+
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        /* Opcional: agrandar la palomita */
+        .form-control.is-valid {
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h1 class="text-center mb-4">Registrar Resultados</h1>
+
+    <table class="table table-bordered table-striped shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>Jornada</th>
+                <th>Partido</th>
+                <th>Goles</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for partido in partidos %}
+            <tr>
+                <td>{{ partido.jornada }}</td>
+
+                <td>
+                    {{ partido.equipo_local.nombre }} vs 
+                    {{ partido.equipo_visitante.nombre }}
+                </td>
+
+                <td>
+                    <form method="POST" class="d-flex gap-2">
+                        {% csrf_token %}
+
+                        <input type="hidden" name="partido_id" value="{{ partido.id }}">
+
+                        <!-- GOLES LOCAL -->
+                        <input type="number" 
+                               name="goles_local" 
+                               class="form-control {% if last_saved_id == partido.id or partido.jugado %}is-valid{% endif %}"
+                               value="{{ partido.goles_local }}" 
+                               min="0">
+
+                        <!-- GOLES VISITANTE -->
+                        <input type="number" 
+                               name="goles_visitante" 
+                               class="form-control {% if last_saved_id == partido.id or partido.jugado %}is-valid{% endif %}"
+                               value="{{ partido.goles_visitante }}" 
+                               min="0">
+                </td>
+
+                <td>
+                        <button class="btn btn-success btn-sm">
+                            Guardar
+                        </button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- BOTONES NAVEGACIÓN -->
+    <a href="/eliminatorias/" class="btn btn-danger mt-3">
+        🏆 Ir a modo eliminatoria
+    </a>
+
+    <a href="/tabla/" class="btn btn-info text-white mt-3 ms-2">
+        📊 Ver tabla de posiciones
+    </a>
+
+    <a href="/" class="btn btn-secondary mt-3 ms-2">
+        Volver
+    </a>
+
+</div>
+
+</body>
+</html>

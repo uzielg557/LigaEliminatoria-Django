@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipos</title>
+
+    <!-- Bootstrap 5 -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h1 class="text-center mb-4">Equipos Registrados</h1>
+
+    <!-- 🔥 BOTONES PRINCIPALES -->
+    <div class="d-flex justify-content-between mb-3">
+
+        <!-- Crear equipo (izquierda) -->
+        <a href="/equipos/crear/" class="btn btn-success">
+            ➕ Crear equipo
+        </a>
+
+        <!-- Botones de acciones (derecha) -->
+        <div class="d-flex gap-2">
+            <a href="/generar-jornadas/" class="btn btn-primary">
+                ⚽ Generar Liga
+            </a>
+
+            <!-- NUEVO: Botón para volver al panel -->
+            <a href="/" class="btn btn-secondary">
+                ⬅ Volver 
+            </a>
+        </div>
+
+    </div>
+
+    <!-- TABLA DE EQUIPOS -->
+    <table class="table table-striped table-bordered shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th style="width: 200px;">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for equipo in equipos %}
+            <tr>
+                <td>{{ equipo.id }}</td>
+                <td>{{ equipo.nombre }}</td>
+                <td>
+                    <a href="/equipos/editar/{{ equipo.id }}/" class="btn btn-warning btn-sm">✏ Editar</a>
+                    <a href="/equipos/eliminar/{{ equipo.id }}/" class="btn btn-danger btn-sm">🗑 Eliminar</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3" class="text-center text-muted">No hay equipos registrados</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>
