@@ -32,41 +32,41 @@ Disponible en:
 
 # 🖼️ Capturas de Pantalla
 
-Panel Principal  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BD1854B54-E728-4ED9-A314-99FA9B2F3033%7D.png?raw=1  
+## Panel Principal  
+![panel](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BD1854B54-E728-4ED9-A314-99FA9B2F3033%7D.png?raw=1)
 
-Equipos Registrados  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B46D34C17-AAAD-491B-97B2-57F70EF3032C%7D.png?raw=1  
+## Equipos Registrados  
+![equipos](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B46D34C17-AAAD-491B-97B2-57F70EF3032C%7D.png?raw=1)
 
-Crear Equipo  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BA4BBEBD0-22FB-478A-8D73-1DF6694D2763%7D.png?raw=1  
+## Crear Equipo  
+![crear](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BA4BBEBD0-22FB-478A-8D73-1DF6694D2763%7D.png?raw=1)
 
-Editar Equipo  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BF65F510C-FE39-42FA-9D55-42F60122CA12%7D.png?raw=1  
+## Editar Equipo  
+![editar](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BF65F510C-FE39-42FA-9D55-42F60122CA12%7D.png?raw=1)
 
-Eliminar Equipo  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BBB477601-94FF-468F-84A7-F359580DAA3A%7D.png?raw=1  
+## Eliminar Equipo  
+![eliminar](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BBB477601-94FF-468F-84A7-F359580DAA3A%7D.png?raw=1)
 
-Jornadas Generadas  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BF81D44DB-684A-4A4D-B838-A6679FECC5A9%7D.png?raw=1  
+## Jornadas Generadas  
+![jornadas](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BF81D44DB-684A-4A4D-B838-A6679FECC5A9%7D.png?raw=1)
 
-Registrar Resultados  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BD13FAC69-0BF5-4AA3-A506-E614BF4AA6C4%7D.png?raw=1  
+## Registrar Resultados  
+![registrar](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BD13FAC69-0BF5-4AA3-A506-E614BF4AA6C4%7D.png?raw=1)
 
-Tabla de Posiciones  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B7C3F060D-21EF-4424-9ABD-F3AAC1F3DAB0%7D.png?raw=1  
+## Tabla de Posiciones  
+![tabla](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B7C3F060D-21EF-4424-9ABD-F3AAC1F3DAB0%7D.png?raw=1)
 
-Elegir Eliminatoria  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B61ED6211-5459-49BC-B533-1BA770883ECD%7D.png?raw=1  
+## Elegir Eliminatoria  
+![elegir](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B61ED6211-5459-49BC-B533-1BA770883ECD%7D.png?raw=1)
 
-Eliminatoria Generada  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B7848E2A6-26DC-4BA2-B30A-FCAFB3CB0D5E%7D.png?raw=1  
+## Eliminatoria Generada  
+![elim_gen](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B7848E2A6-26DC-4BA2-B30A-FCAFB3CB0D5E%7D.png?raw=1)
 
-Registrar Eliminatoria  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B7B997B89-1E98-4E75-97CE-31E5B78DADF5%7D.png?raw=1  
+## Registrar Eliminatoria  
+![reg_elim](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7B7B997B89-1E98-4E75-97CE-31E5B78DADF5%7D.png?raw=1)
 
-Campeón del Torneo  
-https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BD50BCA5D-EA60-4CCD-A1D2-392D37BC6709%7D.png?raw=1  
+## Campeón del Torneo  
+![campeon](https://github.com/uzielg557/LigaEliminatoria-Django/blob/main/%7BD50BCA5D-EA60-4CCD-A1D2-392D37BC6709%7D.png?raw=1)
 
 ---
 
